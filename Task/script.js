@@ -1,5 +1,5 @@
 const apiKey = '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'; 
-// Function to send the message and get response from the API
+
 document.getElementById("send-btn").addEventListener("click", function () {
     const message = document.getElementById("message-input").value;
     if (message) {
@@ -15,7 +15,7 @@ function displayMessage(sender, message) {
     const messageElement = document.createElement("div");
     messageElement.innerHTML = `<strong>${sender}:</strong> ${message}`;
     chatBox.appendChild(messageElement);
-    chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to the bottom of the chat
+    chatBox.scrollTop = chatBox.scrollHeight; 
 }
 
 // Function to send message to the Groq API and display the response
